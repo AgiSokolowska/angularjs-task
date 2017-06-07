@@ -1,0 +1,43 @@
+<div class="conteiner">
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th ng-repeat="headline in [
+            '','id','name' , 'surname' , 'date of birth' , 'mobile number', 'address(city+street+house number)'
+                ]">
+                {{headline}}
+          </th>
+            <th>
+            <button type="button" class="btn btn-info btn-sm" ng-checked="selected"  ng-click="editSelected($editUser)" ><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit selected</button>
+            </th>
+        </tr>
+      </thead>
+        <tbody>
+
+          <tr ng-repeat="user in users">
+            <td><input type="checkbox" ng-checked="selected" ng-click="selected=! selected" ></td>
+              <td>{{$index}}</td>
+                <td>{{user.name}}
+                  <input type="text" class="form-control"  ng-show="editUser" ng-model="user.name">
+                </td>
+                  <td>{{user.surname}}
+                    <input type="text" class="form-control"  ng-show="editUser" ng-model="user.surname">
+                  </td>
+                  <td>{{user.dateOfBirth}}
+                  <input type="text" class="form-control"  ng-show="editUser" ng-model="user.dateOfBirth">
+                  </td>
+                  <td>{{user.mobileNumber}}
+                    <input type="text" class="form-control" ng-show="editUser" ng-model="user.mobileNumber">
+                  </td>
+                  <td>{{user.addres}}
+                    <input type="text" class="form-control"  ng-show="editUser" ng-model="user.addres">
+                  </td>
+                  <td><button ng-click="editUser=! editUser"  class="btn btn-info btn-sm" type="button" ><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit</button>
+                  <button ng-click="deleteUser($index)" class="btn btn-danger btn-sm" type="button">x Delete</button></td>
+            </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>

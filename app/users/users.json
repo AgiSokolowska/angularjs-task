@@ -1,0 +1,43 @@
+[{
+  "name": "name0",
+  "surname": "surname0",
+  "dateOfBirth": "24 - 8 - 1981",
+  "mobileNumber": 634523125,
+  "addres": "Poznan, Dluga 2"
+}, {
+  "name": "name1",
+  "surname": "surname1",
+  "dateOfBirth": "28 - 9 - 1983",
+  "mobileNumber": 812312312,
+  "addres": "Warsaw, Wolowska 22"
+}, {
+  "name": "name2",
+  "surname": "surname2",
+  "dateOfBirth": "24 - 8 - 1983",
+  "mobileNumber": 634523125,
+  "addres": "Warsaw, Wolowska 22"
+}, {
+  "name": "name3",
+  "surname": "surname3",
+  "dateOfBirth": "04 - 5 - 1978",
+  "mobileNumber": 634523125,
+  "addres": "Minsk, Volitsa 10"
+}, {
+  "name": "name4",
+  "surname": "surname4",
+  "dateOfBirth": "21 - 1 - 1980",
+  "mobileNumber": 644523425,
+  "addres": "Torun, Torunska 1"
+}, {
+  "name": "name5",
+  "surname": "surname5",
+  "dateOfBirth": "24 - 8 - 1986",
+  "mobileNumber": 234234562,
+  "addres": "Warsaw, Wolowska 22"
+}, {
+  "name": "name6",
+  "surname": "surname6",
+  "dateOfBirth": "13 - 3 - 1983",
+  "mobileNumber": 123543423,
+  "addres": "Warsaw, Wolowska 22"
+}]
