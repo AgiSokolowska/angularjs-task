@@ -2,20 +2,21 @@ angular.
 module('usersList').
 component('usersList', {
   templateUrl: 'users-list/users-list.template.html',
-  controller: ['$scope', '$http', function usersController($scope, $http) {
-    $http.get('users/users.json').then(function(response) {
-      $scope.users = response.data;
-    });
-    $scope.editUser = false;
+  controller: ['User', '$scope',
+    function usersController(User, $scope) {
+      $scope.users = User.query();
 
-    $scope.deleteUser = function($index) {
-      $scope.users.splice($index, 1);
-    };
+      $scope.deleteUser = function($index) {
+        $scope.users.splice($index, 1);
+      };
 
-    $scope.editSelected = function() {
+      $scope.editSelected = function() {
+        angular.forEach($scope, function($scope) {
+          $scope.push(user.editUser);
+        })
+      };
+
 
     }
-
-
-  }]
+  ]
 });
