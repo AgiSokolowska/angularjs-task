@@ -12,17 +12,16 @@ concentrate on proper design and clean code, rather than UI design.
 
 
 Prerequisites:
-
-Git to clone repository
-Node.JS (with npm)
+*Git to clone repository
+*Node.JS (with npm)
 
 Installing:
 Enter project directory and run *npm install* to install dependencies.
 This command reads angularjs-task's package.json file and downloads the following tools into the node_modules directory:
-Bower - client-side code package manager
-Http-Server - simple local static web server
-Karma - unit test runner
-Protractor - end-to-end (E2E) test runner
+*Bower - client-side code package manager
+*Http-Server - simple local static web server
+*Karma - unit test runner
+*Protractor - end-to-end (E2E) test runner
 Running *npm install* will also automatically use bower to download the AngularJS framework into the app/bower_components directory.
 
 Running
