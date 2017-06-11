@@ -16,7 +16,7 @@
       <tbody>
 
         <tr ng-repeat="user in users">
-          <td><input type="checkbox"  ng-checked="selected" ng-click="selected=!selected" ng-model="user.selected">{{user.selected}}</td>
+          <td><input type="checkbox"  ng-checked="selected" ng-click="selected=!selected" ng-model="user.selected"></td>
           <td>{{$index}}</td>
 
           <td><span ng-show="!user.editUser">{{user.name}}</span>
@@ -28,7 +28,7 @@
           </td>
 
           <td><span ng-show="!user.editUser">{{user.dateOfBirth}}</span>
-            <input type="text" class="form-control datepicker" data-date-format="mm/dd/yyyy" ng-show="user.editUser" ng-model="user.dateOfBirth">
+            <input type="text" class="form-control" ng-show="user.editUser" ng-model="user.dateOfBirth">
           </td>
 
           <td><span ng-show="!user.editUser">{{user.mobileNumber}}</span>

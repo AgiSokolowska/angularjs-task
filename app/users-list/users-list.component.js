@@ -11,11 +11,10 @@ component('usersList', {
       };
 
       $scope.editSelected = function() {
-        angular.forEach($scope, function($scope) {
-          $scope.push(user.editUser);
+        angular.forEach($scope.users, function(user) {
+          user.editUser = user.selected;
         })
       };
-
 
     }
   ]

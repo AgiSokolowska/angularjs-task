@@ -6,6 +6,7 @@ describe('myUsers Application', function() {
 
     beforeEach(function() {
       browser.get('index.html');
+      browser.driver.sleep(500);
     });
 
     it('should be 7 users on the list', function() {
